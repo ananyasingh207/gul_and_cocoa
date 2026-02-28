@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import SearchBar from '../../components/SearchBar/SearchBar'
+import SearchBar from '../../components/searchbar/SearchBar'
 import '../home/home.css'
 import './menu.css'
 
