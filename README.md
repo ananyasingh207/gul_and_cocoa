@@ -2,7 +2,7 @@
 
 **Live Demo:** [https://gulandcocoa-v1.vercel.app/](https://gulandcocoa-v1.vercel.app/)
 
-Welcome to the **Gul & Cocoa** repository! This project is the front-end web experience for a boutique dessert café that beautifully blends traditional South Asian mithai with modern patisserie aesthetics.
+Welcome to the **Gul & Cocoa** repository! This project is a **front-end only** web experience created for a boutique dessert café that beautifully blends traditional South Asian mithai with modern patisserie aesthetics.
 
 ## 🌸 Brand Concept & Personality
 
@@ -79,15 +79,15 @@ The colors are warm, appetizing, and distinctly "dessert-like" without relying o
 *   **Breathing Room:** We intentionally use generous padding (e.g., `8rem` and `9rem` top padding below navbars) to give the content room to breathe.
 *   **Boutique Framing:** Images often utilize custom styling like golden `outline-offset` borders or arched `border-radius: 50% 50% 0 0` to mimic physical boutique window displays or premium packaging.
 
-## 🤔 Assumptions
+## 🤔 Project Scope & Assumptions
 
-*   **Static Data Integration:** The current menu data and store hours are hardcoded directly within the React components (e.g., `Menu.jsx`) assuming an MVP/brochureware phase. A future CMS integration (like Contentful or Sanity) or custom backend would be required to make these editable by the client.
-*   **Contact Form:** The contact form UI is built and fully responsive, but it currently has no backend handling (`e.preventDefault()` is used). It assumes integration with a service like Formspree, EmailJS, or a custom API endpoint in the future.
-*   **Map Data:** The Google Maps iframe is currently hardcoded to a placeholder location (Connaught Place, New Delhi) assuming the client will provide their final physical location coordinates for launch.
+As a **frontend-only** showcase project, please note the following:
+*   **Static Data Integration:** The menu details, pricing, and store hours are currently hardcoded directly within the React components (e.g., `Menu.jsx`) to demonstrate the UI layout. 
+*   **Contact Form:** The contact form UI is fully responsive and interactive, but it currently has no backend handling (`e.preventDefault()` is used). It is built to be easily hooked up to a service like Formspree, EmailJS, or a custom API in the future.
+*   **Map Data:** The Google Maps iframe is currently hardcoded to a placeholder location (Connaught Place, New Delhi).
 
-## ⚠️ Known Limitations
+## ⚠️ Known Limitations (Frontend Scope)
 
-1.  **GSAP Dependency Size:** We are relying on GSAP for the initial hero animations. While powerful, this adds to the main bundle size. For future optimization, we may want to lazy-load the home page animations or transition to CSS-only animations if bandwidth becomes a strict concern.
-2.  **Search Functionality:** The menu search currently only filters the exact loaded array on the client side. It does not account for complex typos, fuzzy searching, or synonyms (e.g., searching "cheese" vs "cheesecake").
-3.  **Build Issues (Vite CLI):** There is currently a known localized environmental issue where `npm run build` fails on some Windows setups due to a `MODULE_NOT_FOUND` error regarding the local `node_modules` path resolution for Vite. (Running `npm run dev` works perfectly).
-4.  **No Server-Side Rendering (SSR):** As a standard Vite SPA React app, the initial HTML payload is almost empty. SEO optimization requires dynamic meta tags (via React Helmet) or a migration to a framework like Next.js or Remix if organic search ranking becomes the primary marketing vertical.
+1.  **Search Functionality:** The menu search currently only filters the exact loaded array on the client side. It does not account for complex typos, fuzzy searching, or synonyms (e.g., searching "cheese" vs "cheesecake"), as there is no backend search service.
+2.  **No Server-Side Rendering (SSR):** As a standard Vite SPA React app, the initial HTML payload is almost empty. SEO optimization requires dynamic meta tags (via React Helmet) or a migration to a framework like Next.js or Remix if organic search ranking becomes the primary marketing vertical.
+3.  **Authentication & E-Commerce:** This project does not contain a shopping cart, checkout flow, or user login states, as it strictly serves as a frontend brochureware and branding showcase.
