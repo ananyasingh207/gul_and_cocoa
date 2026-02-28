@@ -1,0 +1,352 @@
+.about-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF4EC;
+    position: relative;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 9rem 5rem 3rem;
+}
+
+.about-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    color: #4A2E2A;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #7a6530;
+    font-style: italic;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.about-story {
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 3rem 4rem;
+}
+
+.story-content-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.story-content-wrapper h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.8rem;
+    color: #4A2E2A;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.story-content-wrapper p {
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #4A2E2A;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.story-content-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+.story-image-float {
+    float: right;
+    width: 45%;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.story-image-float img {
+    width: 100%;
+    object-fit: cover;
+    --s: 10px;
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 1px solid #C8A95A;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #C8A95A 0);
+}
+
+.about-values {
+    background-color: #FFF0F3;
+    padding: 4rem 5rem;
+}
+
+.about-values h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    color: #4A2E2A;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background-color: #FFFBF7;
+    border: 1px solid rgba(200, 169, 90, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(74, 46, 42, 0.03);
+}
+
+.value-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    color: #4A2E2A;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.value-card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #4A2E2A;
+    opacity: 0.65;
+    line-height: 1.7;
+}
+
+.about-team {
+    padding: 4rem 5rem;
+    background-color: #FFF4EC;
+}
+
+.about-team h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    color: #4A2E2A;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-grid.two-columns {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+}
+
+.team-card {
+    background-color: #FFFBF7;
+    border: 1px solid rgba(200, 169, 90, 0.1);
+    border-radius: 16px;
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:
+        0 2px 6px rgba(74, 46, 42, 0.04),
+        0 8px 20px rgba(74, 46, 42, 0.03);
+    position: relative;
+    text-align: left;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 10%,
+            rgba(255, 255, 255, 0.8) 50%,
+            transparent 90%);
+    z-index: 2;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 4px 12px rgba(74, 46, 42, 0.05),
+        0 12px 32px rgba(74, 46, 42, 0.08);
+}
+
+.team-photo {
+    width: 250px;
+    height: 100%;
+    min-height: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.team-card:hover .team-photo img {
+    transform: scale(1.05);
+}
+
+.team-content {
+    flex: 1;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #4A2E2A;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.team-role {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #9E7E2E;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.team-card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #4A2E2A;
+    opacity: 0.6;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-hero,
+    .about-story,
+    .about-values,
+    .about-team {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .values-grid {
+        gap: 2rem;
+    }
+
+    .team-grid {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-hero {
+        padding: 8rem 1.5rem 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero p {
+        font-size: 17px;
+    }
+
+    .about-story {
+        padding: 1.5rem 1.5rem 3rem;
+    }
+
+    .story-content-wrapper h2 {
+        font-size: 1.8rem;
+    }
+
+    .story-content-wrapper p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .story-image-float {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-values,
+    .about-team {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-values h2,
+    .about-team h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .value-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .team-card {
+        flex-direction: column;
+    }
+
+    .team-photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        min-height: auto;
+    }
+
+    .team-photo img {
+        object-position: top center;
+    }
+
+    .team-content {
+        padding: 1.5rem;
+        text-align: center;
+    }
+}

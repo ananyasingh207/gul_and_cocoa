@@ -1,0 +1,284 @@
+.contact-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF4EC;
+    padding: 9rem 0 0;
+    position: relative;
+    box-sizing: border-box;
+    color: #4A2E2A;
+}
+
+.contact-header {
+    text-align: center;
+    padding: 0 5rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-header h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    color: #C8A95A;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.contact-header p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #7a6530;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.contact-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5rem 5rem;
+}
+
+.contact-top-row {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-info-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-details h2,
+.contact-hours h2,
+.contact-enquiry h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    color: #4A2E2A;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.detail-group {
+    margin-bottom: 1.5rem;
+}
+
+.detail-group:last-child {
+    margin-bottom: 0;
+}
+
+.detail-group h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #C8A95A;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail-group p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A2E2A;
+}
+
+.hours-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(200, 169, 90, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hours-row .day {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #4A2E2A;
+}
+
+.hours-row .time {
+    font-family: "Poppins", sans-serif;
+    color: #7a6530;
+}
+
+.contact-map-column {
+    flex: 1.2;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8e8df;
+    
+}
+
+.contact-enquiry {
+    background-color: #FFFBF7;
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid rgba(200, 169, 90, 0.15);
+    box-shadow: 0 4px 20px rgba(74, 46, 42, 0.02);
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-group label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4A2E2A;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(74, 46, 42, 0.2);
+    border-radius: 8px;
+    background-color: transparent;
+    color: #4A2E2A;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #C8A95A;
+    box-shadow: 0 0 0 3px rgba(200, 169, 90, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 300px;
+    background-color: #C8A95A;
+    color: #FFF4EC;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #b3954e;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1279px) {
+
+    .contact-page {
+        padding-top: 8rem;
+    }
+
+    .contact-header {
+        padding: 0 3rem 2rem;
+    }
+
+    .contact-main {
+        padding: 0 3rem 4rem;
+    }
+
+    .contact-top-row {
+        gap: 2.5rem;
+        flex-direction: column;
+    }
+
+    .contact-map-column {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .contact-page {
+        padding-top: 7rem;
+    }
+
+    .contact-header {
+        padding: 0 1.5rem 2rem;
+    }
+
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+    }
+
+    .contact-main {
+        padding: 0 1.5rem 3rem;
+    }
+
+    .contact-top-row {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .map-container {
+        min-height: 300px;
+    }
+
+    .contact-enquiry {
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

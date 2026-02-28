@@ -1,0 +1,91 @@
+.search-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    background: #FFFBF7;
+    border: 1px solid rgba(200, 169, 90, 0.15);
+    border-radius: 100px;
+    padding: 0.75rem 1.25rem 0.75rem 3rem;
+    box-shadow:
+        0 2px 8px rgba(74, 46, 42, 0.04),
+        0 4px 16px rgba(74, 46, 42, 0.02);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar:focus-within {
+    border-color: rgba(200, 169, 90, 0.35);
+    box-shadow:
+        0 2px 8px rgba(74, 46, 42, 0.04),
+        0 4px 16px rgba(200, 169, 90, 0.08);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1.25rem;
+    width: 18px;
+    height: 18px;
+    color: #C8A95A;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.search-bar:focus-within .search-icon {
+    opacity: 1;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #4A2E2A;
+    letter-spacing: 0.3px;
+}
+
+.search-input::placeholder {
+    color: #4A2E2A;
+    opacity: 0.35;
+    font-style: italic;
+}
+
+.search-clear {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #4A2E2A;
+    opacity: 0.35;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+    transition: opacity 0.2s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.search-clear:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+    .search-bar-wrapper {
+        padding: 0 1.5rem 2rem;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+}
