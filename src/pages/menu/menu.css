@@ -313,11 +313,11 @@
 
 @media screen and (max-width: 767px) {
     .menu-page {
-        padding-top: 7rem;
+        padding-top: 0;
     }
 
     .menu-header {
-        padding: 0 1.5rem 2rem;
+        padding: 1rem 1.5rem 2rem;
     }
 
     .menu-header h1 {

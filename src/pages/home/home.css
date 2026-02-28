@@ -118,18 +118,18 @@ main {
     transform: translateY(-50%);
     color: #4A2E2A;
     width: 50%;
-    
+
     padding-left: 5rem;
     padding-right: 5rem;
     box-sizing: border-box;
-    
+
 }
 
 .small {
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 2vw;
-    
+
     font-weight: 500;
     line-height: 1.5;
     color: #917a41;
@@ -141,7 +141,7 @@ main {
     position: relative;
     font-family: "Playfair Display", serif;
     font-size: 4vw;
-    
+
     font-style: italic;
     line-height: 1.3;
     color: #4A2E2A;
@@ -151,10 +151,10 @@ main {
 .big {
     font-family: "Cormorant Garamond", serif;
     font-size: 5vw;
-    
+
     font-weight: 600;
     letter-spacing: 0.05vw;
-    
+
     line-height: 0.9;
 }
 
@@ -181,9 +181,9 @@ main {
 .specs {
     position: absolute;
     bottom: 80px;
-    
+
     left: 55%;
-    
+
     color: #C8A95A;
     font-size: 16px;
     display: flex;
@@ -250,17 +250,17 @@ main {
     position: relative;
     z-index: 0;
     width: 270px;
-    
+
     height: 64px;
-    
+
     text-decoration: none;
     font-family: "Cormorant Garamond", serif;
     font-size: 18px;
-    
+
     font-weight: 500;
     color: #4A2E2A;
     letter-spacing: 5px;
-    
+
     transition: all 0.3s ease;
     background-color: #fcc8d8e4;
     border-radius: 300px;
@@ -289,9 +289,9 @@ main {
 .button::before {
     top: 0;
     left: 62px;
-    
+
     width: calc(100% - 64px * 2 - 16px);
-    
+
 }
 
 .button::after {
@@ -316,7 +316,7 @@ main {
     position: absolute;
     top: 0;
     width: 64px;
-    
+
     height: 100%;
     overflow: hidden;
 }
@@ -367,7 +367,7 @@ main {
 .button__drow1 {
     top: -16px;
     left: 44px;
-    
+
     width: 32px;
     height: 0;
     transform: rotate(30deg);
@@ -375,9 +375,9 @@ main {
 
 .button__drow2 {
     top: 48px;
-    
+
     left: 81px;
-    
+
     width: 32px;
     height: 0;
     transform: rotate(-127deg);
@@ -552,7 +552,7 @@ main {
     align-items: center;
     z-index: 5;
     margin-top: -1px;
-    
+
 }
 
 .section-divider::before {
@@ -589,14 +589,14 @@ main {
     max-width: 800px;
     text-align: center;
     margin-bottom: 3rem;
-    
+
 }
 
 .story-content h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 3rem;
     color: #C8A95A;
-    
+
     margin-bottom: 2rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -606,7 +606,7 @@ main {
     font-family: "Playfair Display", serif;
     font-size: 26px;
     line-height: 1.4;
-    
+
     color: #4A2E2A;
     font-weight: 500;
 }
@@ -614,29 +614,29 @@ main {
 .story-images {
     display: flex;
     gap: 3rem;
-    
+
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1300px;
-    
+
 }
 
 .story-images img {
     width: 48%;
-    
+
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 16px;
-    
+
     box-shadow: 0 10px 40px rgba(74, 46, 42, 0.06);
-    
+
 }
 
 .featured-creations {
     width: 100%;
     background-color: #ffdde6;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,7 +648,7 @@ main {
 .featured-heading {
     text-align: center;
     margin-bottom: 2rem;
-    
+
 }
 
 .featured-heading h2 {
@@ -682,34 +682,34 @@ main {
     align-items: center;
     text-align: center;
     background-color: #FFF4EC;
-    
+
     padding: 0 0 2rem 0;
-    
+
     border-radius: 50% 50% 16px 16px;
-    
+
     box-shadow: 0 10px 30px rgba(74, 46, 42, 0.04);
-    
+
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     overflow: hidden;
-    
+
 }
 
 .creation-card:hover {
     transform: translateY(-8px);
-    
+
     box-shadow: 0 20px 40px rgba(74, 46, 42, 0.08);
-    
+
 }
 
 .creation-image {
     width: 100%;
     aspect-ratio: 1/1;
-    
+
     overflow: hidden;
     border-radius: 50% 50% 0 0;
-    
+
     margin-bottom: 1.5rem;
-    
+
 }
 
 .creation-image img {
@@ -717,12 +717,12 @@ main {
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    
+
 }
 
 .creation-card:hover .creation-image img {
     transform: scale(1.05);
-    
+
 }
 
 .creation-card h3 {
@@ -748,7 +748,7 @@ main {
     display: flex;
     justify-content: center;
     padding: 5rem 7rem;
-    
+
     box-sizing: border-box;
 }
 
@@ -763,7 +763,7 @@ main {
     font-size: 3rem;
     color: #4A2E2A;
     margin-bottom: 2rem;
-    
+
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -779,7 +779,7 @@ main {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(200, 169, 90, 0.3);
-    
+
     padding-bottom: 0.5rem;
 }
 
@@ -823,7 +823,7 @@ main {
     font-size: 3rem;
     color: #4A2E2A;
     margin-bottom: 1rem;
-    
+
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -862,7 +862,7 @@ main {
     padding: 1rem;
     border-radius: 24px;
     box-shadow: 0 15px 50px rgba(74, 46, 42, 0.08);
-    
+
     border: 1px solid rgba(200, 169, 90, 0.2);
     box-sizing: border-box;
 }
@@ -1001,7 +1001,7 @@ main {
     text-align: center;
     padding: 2rem 0;
     background-color: rgba(246, 193, 207, 0.2);
-    
+
     border-top: 1px solid rgba(200, 169, 90, 0.1);
 }
 
@@ -1084,7 +1084,7 @@ main {
         background: linear-gradient(180deg, #F6C1CF, #FFF4EC);
         height: auto;
         min-height: unset;
-        
+
         overflow: visible;
     }
 
@@ -1107,7 +1107,7 @@ main {
     .small {
         order: 1;
         position: static;
-        
+
         font-size: 5vw;
         margin-bottom: 5px;
         text-align: center;
@@ -1138,11 +1138,11 @@ main {
     .content .image {
         order: 4;
         position: static;
-        
+
         left: unset;
         top: unset;
         transform: none;
-        
+
         width: 60%;
         max-width: 280px;
         height: auto;
@@ -1176,23 +1176,35 @@ main {
         display: none;
     }
 
+    .main-header {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 12px 20px;
+        gap: 4px 16px;
+    }
+
     .logo {
-        top: 15px;
-        left: 20px;
+        position: relative;
+        top: auto;
+        left: auto;
         font-size: 20px;
     }
 
     .navbar {
-        top: 15px;
-        right: 20px;
-        gap: 15px;
+        position: relative;
+        top: auto;
+        right: auto;
+        gap: 12px;
     }
 
     .navbar a {
-        font-size: 14px;
-        padding: 10px 5px;
+        font-size: 13px;
+        padding: 6px 4px;
         min-height: 44px;
-        
         display: inline-flex;
         align-items: center;
     }
@@ -1223,7 +1235,7 @@ main {
     .section-divider {
         height: 40px;
         margin: 0;
-        
+
     }
 
     .featured-creations {
